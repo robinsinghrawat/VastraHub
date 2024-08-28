@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Aftersearch">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/searchname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Searchname"
+            android:textColor="@color/appcolor"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/searchrecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp" />
+
+    </FrameLayout>
+
+
+</ScrollView>

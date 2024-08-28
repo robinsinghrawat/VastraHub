@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1080770914285",
+    "project_id": "vastrahub444",
+    "storage_bucket": "vastrahub444.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080770914285:android:fb2fc1589b833c7932e9e4",
+        "android_client_info": {
+          "package_name": "com.oms.fashionhub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUFk8DMAS393qqJycXYHB88Zlok_xzR1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

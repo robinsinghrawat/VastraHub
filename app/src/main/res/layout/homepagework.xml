@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bannerrecycler"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <LinearLayout
+        android:id="@+id/circularIndicatorLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+            android:layout_marginLeft="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-15dp">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cattext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#5C3A21"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/item_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp" />
+
+        <TextView
+            android:id="@+id/subcattext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trendings for you"
+            android:textSize="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#5C3A21"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/subcatrecycler"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="2dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4D4D4"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Profilework">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textColor="@color/appcolor"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="155dp"
+        android:text="Profile"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userimage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:cardCornerRadius="100dp"
+        app:civ_circle_background_color="@color/appcolor"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/ic_launcher_foreground"
+        >
+
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:textColor="@color/appcolor"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="213dp"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:scrollbars="none" />
+
+</FrameLayout>

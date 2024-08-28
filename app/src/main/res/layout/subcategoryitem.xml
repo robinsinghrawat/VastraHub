@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:layout_marginLeft="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/prodcard"
+        android:layout_width="175dp"
+        app:cardCornerRadius="-10dp"
+        app:cardMaxElevation="130dp"
+        app:cardElevation="150dp"
+        app:strokeWidth="-1dp"
+        android:layout_height="300dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:background="#DFCFCF"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/imagecard"
+                app:cardCornerRadius="25dp"
+                android:layout_width="match_parent"
+                android:elevation="20dp"
+
+
+                android:layout_height="222dp">
+
+
+            <ImageView
+                android:id="@+id/subimage"
+                android:layout_width="match_parent"
+                android:layout_height="222dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_foreground" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imagecard"
+                android:layout_marginLeft="7dp"
+                android:fontFamily="serif"
+                android:text="Brand"
+                android:textColor="@color/appcolor"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/subname"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="7dp"
+                android:textColor="#686565"
+                android:layout_below="@+id/brand"
+                android:text="materialname"/>
+            <TextView
+                android:id="@+id/rupee"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subname"
+                android:textColor="#918C8C"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="17dp"
+                android:background="@drawable/line_background"
+                android:text="₹"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/disPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subname"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/line_background"
+                android:text="Price"
+                android:textColor="#918C8C"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subname"
+                android:layout_marginLeft="70dp"
+                android:text="₹"
+                android:textColor="@color/appcolor"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                 />
+
+            <TextView
+                android:id="@+id/Price"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subname"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="1dp"
+                android:text="Price"
+                android:textColor="@color/appcolor"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

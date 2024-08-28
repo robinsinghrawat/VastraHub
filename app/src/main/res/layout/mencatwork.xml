@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MensrFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Your existing layout content here -->
+
+        <ImageView
+            android:id="@+id/mengif"
+            android:layout_width="match_parent"
+            android:layout_height="213dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <ImageView
+            android:layout_width="415dp"
+            android:layout_height="60dp"
+            android:padding="80dp"
+            android:background="#BAA08C"
+            android:layout_marginLeft="-15dp"
+            android:layout_marginTop="212dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mentext"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/menitemrecycle"
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:layout_marginTop="275dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginTop="410dp"
+            android:background="#9A785E"
+            android:fontFamily="serif-monospace"
+            android:text="Trendings for you"
+            android:padding="6dp"
+            android:textAlignment="center"
+            android:textColor="@color/appcolor"
+            android:textSize="27dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mensubrecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="450dp" />
+
+    </FrameLayout>
+
+</ScrollView>

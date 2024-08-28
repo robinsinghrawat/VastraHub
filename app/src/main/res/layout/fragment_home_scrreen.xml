@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4D4D4"
+    android:id="@+id/fragmentContain"
+    tools:context=".HomePage">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="30dp"
+            android:text="Welcome"
+            android:textSize="35dp" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="260dp"
+            android:src="@drawable/bellicon"/>
+        <ImageView
+            android:id="@+id/mycart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="315dp"
+            android:src="@drawable/cart"
+            app:tint="@color/appcolor" />
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="18dp"
+            android:textSize="15dp" />
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp">
+
+                    <include layout="@layout/homepagework" />
+                </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <!--<com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        app:headerLayout="@layout/navbardrawaerlayout"
+        android:layout_gravity="start"
+        android:background="#716E6E"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    </com.google.android.material.navigation.NavigationView>-->
+
+</androidx.drawerlayout.widget.DrawerLayout>

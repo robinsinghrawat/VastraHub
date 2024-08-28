@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".WomenFragment">
+
+        <ImageView
+            android:id="@+id/womengif"
+            android:layout_width="match_parent"
+            android:layout_height="213dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textSize="45dp"
+            android:textStyle="bold"
+            android:background="#BAA08C"
+            android:fontFamily="serif-monospace"
+            android:textColor="@color/appcolor"
+            android:layout_marginTop="215dp"
+            android:textAlignment="center"
+            android:text="Women's Wear"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/womenrecycler"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="-10dp"
+            android:layout_height="122dp"
+            android:layout_marginTop="280dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginTop="410dp"
+            android:background="#9A785E"
+            android:fontFamily="serif-monospace"
+            android:text="Trendings for you"
+            android:padding="6dp"
+            android:textAlignment="center"
+            android:textColor="@color/appcolor"
+            android:textSize="27dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/womensubrecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="460dp" />
+    </FrameLayout>
+
+</ScrollView>
